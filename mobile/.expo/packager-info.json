@@ -2,8 +2,15 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
+<<<<<<< HEAD
   "packagerPid": 13144,
   "expoServerNgrokUrl": "https://sn-m5t.anonymous.mobile.exp.direct",
   "packagerNgrokUrl": "https://packager.sn-m5t.anonymous.mobile.exp.direct",
   "ngrokPid": 7508
+=======
+  "packagerPid": 5764,
+  "expoServerNgrokUrl": "https://vj-kpy.anonymous.mobile.exp.direct",
+  "packagerNgrokUrl": "https://packager.vj-kpy.anonymous.mobile.exp.direct",
+  "ngrokPid": 4344
+>>>>>>> 70bea99a1f20a3d1ef20783848319a41cf3bfa07
 }

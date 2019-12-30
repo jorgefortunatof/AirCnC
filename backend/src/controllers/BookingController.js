@@ -6,6 +6,7 @@ module.exports = {
         const spot = req.params.spot_id
         const { date } = req.body
         
+<<<<<<< HEAD
         const booking = await Booking.create({
             user, 
             spot, 
@@ -17,6 +18,10 @@ module.exports = {
         if (ownerSocket){
             req.io.to(ownerSocket).emit('booking_request', booking)
         }
+=======
+        const booking = await Booking.create({user, spot, date})
+        await booking.populate('spot').populate('user').execPopulate()
+>>>>>>> 70bea99a1f20a3d1ef20783848319a41cf3bfa07
 
         return res.json(booking)
     }

@@ -3,6 +3,10 @@
   "lanType": "ip",
   "dev": true,
   "minify": false,
+<<<<<<< HEAD
   "urlRandomness": "sn-m5t",
+=======
+  "urlRandomness": "vj-kpy",
+>>>>>>> 70bea99a1f20a3d1ef20783848319a41cf3bfa07
   "https": false
 }

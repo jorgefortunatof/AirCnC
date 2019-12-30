@@ -1,12 +1,20 @@
+<<<<<<< HEAD
 import React, { useEffect, useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import './styles.css'
 
 import socketio from 'socket.io-client'
+=======
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import './styles.css'
+
+>>>>>>> 70bea99a1f20a3d1ef20783848319a41cf3bfa07
 import api from '../../services/api'
 
 export default function Dashboard(){
     const [spots, setSpots] = useState([])
+<<<<<<< HEAD
     const [requests, setRequests] = useState([])
 
     
@@ -20,6 +28,8 @@ export default function Dashboard(){
             setRequests([...requests, data])
         })
     }, [requests, socket])
+=======
+>>>>>>> 70bea99a1f20a3d1ef20783848319a41cf3bfa07
 
     useEffect(() => {
         async function loadSpots(){
@@ -32,6 +42,7 @@ export default function Dashboard(){
         loadSpots()
     }, [])
 
+<<<<<<< HEAD
     async function handleAccept(id){
         await api.post(`/bookings/${id}/approvals`)
         setRequests(requests.filter(request => request._id !== id))
@@ -67,6 +78,22 @@ export default function Dashboard(){
             <Link to='/new'>
                 <button className="btn">Cadastrar novo spot</button>
             </Link>
+=======
+    return(
+        <>
+        <ul className="spot-list">
+            {spots.map( spot => (
+                <li key={spot._id}>
+                    <header style={{backgroundImage: `url('${spot.thumbnail_url}')`}} />
+                    <strong>{spot.company}</strong>
+                    <span>{spot.price ? `R$: ${spot.price}/dia` : 'GRATUITO'}</span>
+                </li>
+            ))}
+        </ul>
+        <Link to='/new'>
+            <button className="btn">Cadastrar novo spot</button>
+        </Link>
+>>>>>>> 70bea99a1f20a3d1ef20783848319a41cf3bfa07
         </>
     )
 }

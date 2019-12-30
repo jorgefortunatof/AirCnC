@@ -10,8 +10,12 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
+<<<<<<< HEAD
     "react-scripts": "3.3.0",
     "socket.io-client": "^2.3.0"
+=======
+    "react-scripts": "3.3.0"
+>>>>>>> 70bea99a1f20a3d1ef20783848319a41cf3bfa07
   },
   "scripts": {
     "start": "react-scripts start",

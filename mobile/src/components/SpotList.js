@@ -19,7 +19,11 @@ function SpotList({ tech, navigation }){
     }, [])
 
     function prepareUrl(url){
+<<<<<<< HEAD
         return url.replace('localhost', '192.168.0.128')
+=======
+        return url.replace('localhost', '192.168.0.112')
+>>>>>>> 70bea99a1f20a3d1ef20783848319a41cf3bfa07
     }
     function handleNavigate(id){
         navigation.navigate('Book', { id })

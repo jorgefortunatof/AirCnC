@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react'
+<<<<<<< HEAD
 import socketio from 'socket.io-client'
 import { Image, ScrollView, View, AsyncStorage, StyleSheet, TouchableOpacity, Alert } from 'react-native'
+=======
+import { Image, ScrollView, View, AsyncStorage, StyleSheet, TouchableOpacity } from 'react-native'
+>>>>>>> 70bea99a1f20a3d1ef20783848319a41cf3bfa07
 import SpotList from '../components/SpotList'
 
 import logo from '../assets/logo.png'
@@ -8,6 +12,7 @@ import logo from '../assets/logo.png'
 export default function List ({navigation}){
     const [techs, setTechs] = useState([])
 
+<<<<<<< HEAD
 
     useEffect(() => {
         AsyncStorage.getItem('user').then(user_id => {
@@ -21,6 +26,8 @@ export default function List ({navigation}){
         })
     }, [])
 
+=======
+>>>>>>> 70bea99a1f20a3d1ef20783848319a41cf3bfa07
     useEffect(() => {
         AsyncStorage.getItem('techs').then(storageTechs => {
             setTechs(storageTechs.split(',').map(tech => tech.trim()))
